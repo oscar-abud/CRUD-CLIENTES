@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 app.get('/clients', Clients.list)
-app.post('/client/', Clients.create)
+app.post('/client', Clients.create)
 app.get('/client/:id', Clients.get)
 app.put('/client/:id', Clients.update)
 app.patch('/client/:id', Clients.update)
